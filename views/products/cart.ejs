@@ -1,0 +1,23 @@
+<% layout('layout/boilerplate') -%>
+
+<div class="cart">
+    <% if (cart && cart.length > 0) { %>
+        <h2>Your Cart</h2>
+        <ul class="list-unstyled d-flex justify-content-center align-items-center flex-wrap">
+            <% cart.forEach(product => { %>
+            <li class="cart-item card m-2" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><%= product.productName %></h5>
+                    <p class="card-text">Price: $<%= product.productPrice %></p>
+                    <form action="/p/cart/remove/<%= product._id %>" method="POST">
+                        <button type="submit" class="btn btn-danger">Remove</button>
+                    </form>
+                </div>
+            </li>
+            <% }) %>
+        </ul>
+    <% } else { %>
+        <h2>Your cart is empty</h2>
+        <a href="/p/products" class="btn btn-outline-primary me-2">Continue Shopping</a>
+    <% } %>
+</div>

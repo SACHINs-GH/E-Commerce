@@ -1,0 +1,23 @@
+<% layout('layout/boilerplate') -%>
+<div class="favourites">
+    <h2>Your Favourites</h2>
+    <% if (favourites && favourites.length > 0) { %>
+        <div class="d-flex justify-content-center align-items-center">
+            <% favourites.forEach((product) => { %>
+                <div class="product card m-2 shadow border border-dark" >
+                    <div class="card-body">
+                        <h3 class="card-title"><%= product.productName %></h3>
+                        <p class="card-text"><%= product.productDescription %></p>
+                        <p class="card-text"><strong>Price:</strong> $<%= product.productPrice %></p>
+                        <a href="/p/products/single/<%= product._id %>" class="btn btn-outline-primary">View Details</a>
+                        <a href="/p/favourites/remove/<%= product._id %>" class="btn btn-outline-danger">Remove</a>
+                        <a href="/p/products" class="btn btn-outline-primary">Back</a>
+                    </div>
+                </div>
+                <% }); %>
+            </div>
+            <% } else { %>
+                <p>You have no favourites yet.</p>
+                <a href="/p/products" class="btn btn-outline-primary">Back</a>
+    <% } %>
+</div>
