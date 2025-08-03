@@ -86,6 +86,7 @@ const productController = {
     deleteProduct: async (req, res) => {
         try {
             await Product.findByIdAndDelete(req.params.id);
+            await Review.deleteMany({product : req.params.id});
             req.flash('success', 'Product deleted successfully');
             res.redirect('/p/products');
         } catch (error) {
