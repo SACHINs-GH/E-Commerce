@@ -16,6 +16,8 @@ const LocalStrategy=require("passport-local");
 const User = require('./models/userModel.js');
 const flash = require('connect-flash');
 
+app.set('trust proxy', 1);
+
 app.use(express.static(path.join(__dirname,"public")));
 app.use(express.urlencoded({extended:true}));
 app.use(methodOverride('_method'));
