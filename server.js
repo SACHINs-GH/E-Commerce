@@ -25,11 +25,12 @@ app.set('views','./views');
 app.use(session({
     secret : process.env.SESSION_SECRET || 'keyboard cat',
     resave: false,
-    saveUninitialized: true,
+    saveUninitialized: false,
     cookie : {
         httpOnly:true,
         maxAge: 3600000,
-        secure: process.env.NODE_ENV === 'production'
+        secure: process.env.NODE_ENV === 'production',
+        sameSite : 'strict'
     }
 }))
 

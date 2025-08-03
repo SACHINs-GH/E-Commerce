@@ -9,7 +9,7 @@
 [![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-FF6B6B?style=for-the-badge&logoColor=white)](https://e-commerce-qftn.onrender.com)
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-FF6B6B?style=for-the-badge&logoColor=white)](https://e-commerce-fw2r.onrender.com)
 [![GitHub Repo](https://img.shields.io/badge/📂_GitHub_Repo-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SACHINs-GH/E-Commerce)
 
 ---
@@ -281,7 +281,7 @@ npm start
 
 ### 🌟 **Experience the Live Application**
 
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_Now-FF6B6B?style=for-the-badge&logoColor=white)](https://e-commerce-qftn.onrender.com)
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_Now-FF6B6B?style=for-the-badge&logoColor=white)](https://e-commerce-fw2r.onrender.com)
 
 *Click above to explore the fully functional e-commerce platform!*
 
